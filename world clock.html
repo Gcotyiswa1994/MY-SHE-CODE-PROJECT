@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Weather App</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="weather-container">
+  <div class="current-weather">
+   <div class="location">
+    <h2>San Francisco</h2>
+    <p>Tuesday</p>
+   </div>
+   <div class="time">
+    <p>18:17</p>
+   </div>
+   <div class="conditions">
+    <p>Few clouds</p>
+    <p>Humidity: 70%</p>
+    <p>Wind: 2.57km/h</p>
+   </div>
+   <div class="temperature">
+    <p>22°C</p>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
+```
+
+CSS (in style.css file):
+
+```
+.weather-container {
+ width: 80%;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #f9f9f9;
+ border: 1px solid #ddd;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.location {
+ flex-basis: 30%;
+}
+
+.time {
+ flex-basis: 20%;
+}
+
+.conditions {
+ flex-basis: 30%;
+}
+
+.temperature {
+ flex-basis: 20%;
+ font-size: 48px;
+ font-weight: bold;
+}
+
+.location h2 {
+ margin-top: 0;
+}
+
+.time p {
+ font-size: 24px;
+}
+
+.conditions p {
+ margin-bottom: 10px;
+}
+
+.temperature p {
+ margin-bottom: 0;
+}
+```
